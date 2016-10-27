@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alxyzc/mucycle/issues"
   },
-  "homepage": "https://github.com/alxyzc/mucycle#readme"
+  "homepage": "https://github.com/alxyzc/mucycle#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
