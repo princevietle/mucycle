@@ -1,0 +1,20 @@
+{
+  "name": "mucycle",
+  "version": "1.0.0",
+  "description": "CSE 170 Final Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxyzc/mucycle.git"
+  },
+  "author": "Alex Z. Yang, Prince Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alxyzc/mucycle/issues"
+  },
+  "homepage": "https://github.com/alxyzc/mucycle#readme"
+}
