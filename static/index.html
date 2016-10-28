@@ -3,50 +3,41 @@
     <title>
         Mucycle
     </title>
-
     <link href="css/mucycle.css" rel="stylesheet" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 </head>
 
-<style>
-img {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-.center {
-    text-align: center;
-}
-</style>
 
 <body>
     <audio autoplay>
         <source src="levelselect.mp3" type="audio/mp3">
     </audio>
 
-    <div>
-
-        <div class="center .upper-half">
-            <h1>Mucycle</h1>
+    <div class="container">
+        <div class="upper-half z-depth-2">
+            <h1 class="title">Mucycle</h1>
         </div>
 
-        <div id="quickplay">
+        <a class="z-depth-2 waves-effect waves-ripple btn-floating btn-large btn-custome pink ">
+            <a href="options.html" class="material-icons btn-label"> </i>
+        </a>
+
+        <div id="quickplay" class="mode-select">
             <a href="game.html">
-                <img class="img-circle" src="images/quickplay.png">
+                <img class="img-circle z-depth-2" src="images/quickplay.png"/>
             </a>
         </div>
 
-        <div id="levelplay">
-            <a href="songselection.html">
+        <div id="levelplay" class="hidden mode-select">
+            <a class="img-btn" href="songselection.html">
                 <img class="img-circle" src="images/songselection.jpg">
             </a>
         </div>
 
-		<div id="options">
-			<a href="options.html">
-				<img class="img-circle" src="images/options.jpg">
-			</a>
-		</div>
-
-
+        <div id="options" class="hidden mode-select">
+            <a href="options.html">
+                <img class="img-circle" src="images/options.jpg">
+            </a>
+        </div>
     </div>
 </body>
