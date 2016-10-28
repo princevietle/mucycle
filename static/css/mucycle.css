@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-.btn-floating {
+.btn-custome {
     text-align: right;
     position: relative;
     float: right;
@@ -36,6 +36,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .img-circle {

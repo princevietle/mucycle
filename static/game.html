@@ -2,16 +2,49 @@
 <head>
     <title>Game Page</title>
     <link href="css/mucycle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="css/materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+            $('.modal-trigger').leanModal({
+                dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                opacity: 1, // Opacity of modal background
+                in_duration: 300, // Transition in duration
+                out_duration: 200, // Transition out duration
+                starting_top: '4%', // Starting top style attribute
+                ending_top: '10%', // Ending top style attribute
+                ready: function() { alert('Ready'); }, // Callback for Modal open
+                complete: function() { alert('Closed'); } // Callback for Modal close
+            }
+            );
+        });
+    </script>
 </head>
 
 <body id="game-dummy">
-	<div class="container">
-		<div id="pause">
-			<a href="pause.html">
-				<p>Pause</p>
-			</a>
-		</div>
+    <div class="container">
+        <div class="upper-half z-depth-2">
+            <h1 class="title">Game</h1>
+        </div>
+        <!-- <div id="staff"> -->
 
-	</div>
+        <a class="z-depth-2 waves-effect waves-ripple btn-floating btn-large btn-custome pink modal-trigger" href="#pause">
+            <i class="material-icons">pause</i>
+        </a>
+
+        <!-- Modal Structure -->
+    </div>
+    <div id="pause" class="modal">
+        <div class="modal-content">
+            <h4>PAUSED</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Resume</a>
+            <a href="index.html" class="waves-effect waves-red btn-flat ">Main Page</a>
+        </div>
+    </div>
 </body>
