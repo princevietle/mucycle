@@ -1,5 +1,5 @@
 /* Makes any image into a circle */
-.img-circle{
+.img-circle {
 	width: 250px;
 	height: 250px;
 	position: relative;
@@ -7,3 +7,6 @@
 	border-radius: 60%;
 }
 
+.upper-half {
+    background: #757575;
+}
