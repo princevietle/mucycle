@@ -69,3 +69,7 @@ body {
 .hidden {
     display: none;
 }
+
+#game-dummy {
+    background-image: url("../images/dummy-background.jpg");
+}
