@@ -73,4 +73,5 @@ body {
 #game-dummy {
     background-image: url("../images/dummy-background.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
