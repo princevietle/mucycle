@@ -1,4 +1,9 @@
 /* Makes any image into a circle */
 .img-circle{
+	width: 250px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
 	border-radius: 60%;
 }
+
